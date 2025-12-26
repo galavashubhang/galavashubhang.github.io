@@ -1,0 +1,131 @@
+body {
+    counter-reset: h2counter;
+}
+
+h2:before {
+    counter-increment: h2counter;
+    counter-reset: h3counter;
+    content: counter(h2counter) "\0000a0\0000a0";
+}
+/* 
+@font-face {
+    font-family: 'myfonthere';
+    font-style: normal;
+    font-weight: normal;
+    src: url('https://chirantandip.github.io/font/cmunbmr.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'myfonthere';
+    font-style:normal;
+    font-weight: bold;
+    src: url('https://chirantandip.github.io/font/cmunsx.ttf') format('truetype');
+} */
+
+.notes-content{
+
+    counter-reset: eqcounter;
+
+    * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: myfonthere;
+    }
+
+    margin-top: 4rem;
+    width: 80%;
+    min-height: 100vh;
+
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: normal;
+    text-align: justify;
+
+    color: rgb(100, 100, 100);
+
+    h1, h2, h3, h4, h5, h6 {
+        color:  #002147;
+        text-align: left;
+        font-weight: bold;
+        margin-bottom: 1rem;
+    }
+
+    h1{
+        margin-top: 2rem;
+        font-size: 1.5rem;
+        font-weight: bold;
+        text-align: center;
+    }
+
+    h2{
+        font-size: 1.2rem;
+        font-weight: bold;
+        text-align: left;
+        margin-top: 4rem;
+        border-bottom-style: solid;
+        border-bottom-color: lightslategray;
+        border-bottom-width: 1px;
+    }
+
+    h3{
+        font-size: 1.2rem;
+        margin-top: 2rem;
+    }
+
+    .math.display{
+        font-size: 1rem;
+        margin: 0 ;
+        color: black;
+        overflow: auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    .math.display::before{
+        position:absolute;
+        counter-increment: eqcounter; 
+        content: "(" counter(eqcounter) ")";
+    }
+
+    @media screen and (max-width: 1200px) {
+        .math.display::before{
+            position: relative;
+        }
+    }
+
+    .math.inline{
+        font-size: 1rem;
+    }
+
+    .references{
+        padding: 2rem;
+
+        font-size: 1rem;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        line-height: normal;
+
+        background-color: aliceblue;
+        color: darkslategrey;
+    }
+
+    blockquote {
+        font-family: Courier;
+        background-color: whitesmoke;
+        padding: 1rem;
+        margin: 2rem;
+    }
+
+    a{
+        color: rebeccapurple;
+        text-decoration: underline rebeccapurple 1px;
+    }
+
+    ul, ol, li{
+        margin: 0;
+        padding: 0;
+        padding-left: 3rem;
+
+    }
+
+}

@@ -1,0 +1,252 @@
+@font-face {
+  font-family: 'myfonthere';
+  font-style: normal;
+  font-weight: normal;
+  src: url('https://chirantandip.github.io/font/cmunbmr.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'myfonthere';
+  font-style:normal;
+  font-weight: bold;
+  src: url('https://chirantandip.github.io/font/cmunsx.ttf') format('truetype');
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 100%;
+  overflow-y: scroll;
+  overflow-x: hidden;
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+}
+
+body {
+  color: #002147;
+  font-family: myfonthere;
+  font-size: 1rem;
+  width: 100%;
+  min-height: 100vh;
+
+  display: flex;
+  flex-direction: column; 
+  align-items: center;
+  justify-content: center;
+  
+  background: white;
+}
+
+footer {
+  padding: 2rem;
+  height: 2rem;
+  color: grey;
+  font-family: monospace;
+  font-weight: bold;
+  letter-spacing: 1px;
+  text-align: center;
+}
+
+.main-content {
+  margin-top: 5em;
+  margin-bottom: 5em;
+  width: 80%;
+}
+
+.indeximg {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  justify-content: center;
+}
+
+.img-container {
+  flex: 2 2 45%; 
+  max-width: 45%;
+  margin: auto;
+  height: auto;
+  padding: 0.8rem;
+  text-align: center;
+  justify-content: center;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+.img-container img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+.caption {
+  padding: 1rem;
+  padding-top: 0.1rem;
+  font-family: monospace;
+  text-align: justify;
+  color: darkslategray;
+}
+
+@media (max-width: 768px) {
+  .img-container {
+      flex: 1 1 100%;
+      max-width: 100%;
+  }
+}
+
+a {
+  color: #00296b;
+  text-decoration: none;
+}
+a:visited {
+  color: #ac4800;
+}
+a:hover {
+  color: rgb(0, 78, 181);
+}
+a:focus {
+  outline: thin dotted;
+}
+
+p {
+  margin: 1em 0;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  color: #002147;
+  line-height: 125%;
+  margin-top: 2em;
+  font-weight: normal;
+  font-size: 1em;
+}
+
+h4, h5, h6 {
+  font-weight: bold;
+}
+
+h1 {
+  font-size: 2em;
+}
+
+h2 {
+  font-size: 2em;
+}
+
+blockquote {
+  color: #666666;
+  margin: 0;
+  padding-left: 3em;
+  border-left: 0.5em #EEE solid;
+}
+
+hr {
+display: block;
+height: 2px;
+border: 0;
+border-top: 1px solid #aaa;
+border-bottom: 1px solid #eee;
+margin: 1em 0;
+padding: 0;
+}
+
+pre, code, kbd, samp {
+color: #000;
+font-family: monospace, monospace;
+_font-family: 'courier new', monospace;
+font-size: 1rem;
+}
+
+pre {
+white-space: pre;
+white-space: pre-wrap;
+word-wrap: break-word;
+}
+
+b, strong {
+font-weight: bold;
+}
+
+dfn {
+font-style: italic;
+}
+
+ins {
+background: #ff9;
+color: #000;
+text-decoration: none;
+}
+
+mark {
+background: #ff0;
+color: #000;
+font-style: italic;
+font-weight: bold;
+}
+
+sub, sup {
+font-size: 75%;
+line-height: 0;
+position: relative;
+vertical-align: baseline;
+}
+
+sup {
+top: -0.5em;
+}
+
+sub {
+bottom: -0.25em;
+}
+
+ul, ol {
+margin: 1em 0;
+padding: 0 0 0 2em;
+}
+
+li p:last-child {
+margin-bottom: 0;
+}
+
+ul ul, ol ol {
+margin: .3em 0;
+}
+
+dl {
+margin-bottom: 1em;
+}
+
+dt {
+font-weight: bold;
+margin-bottom: .8em;
+}
+
+dd {
+margin: 0 0 .8em 2em;
+}
+
+dd:last-child {
+margin-bottom: 0;
+}
+
+::-webkit-scrollbar {
+  width: 12px; 
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: rgba(0, 0, 0, 0.5); 
+  opacity: 0.6;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+  opacity: 1;
+}
+
+::-webkit-scrollbar-track {
+  background: rgba(0, 0, 0, 0.1);
+  border-radius: 6px;
+}
+

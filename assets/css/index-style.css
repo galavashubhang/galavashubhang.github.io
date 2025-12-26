@@ -1,0 +1,25 @@
+.thisdiv {
+    width: 80%;
+    min-height: 100vh;
+    margin: 0 auto;
+    margin-top: 3rem;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.indexmain {
+    width: 100%;
+    text-align: center;
+}
+
+.update_body {
+    width: 100%;
+    color:black;
+    text-align: justify;
+    margin-bottom: 1rem;
+    padding: 1rem;
+}
+

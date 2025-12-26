@@ -1,0 +1,164 @@
+.CV_BODY {
+  min-width:500px;
+  max-width:1000px;
+  margin: 2rem auto;
+  padding: 2rem 2rem;
+  background-color: white;
+  box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;
+  font-family: sans-serif;
+  text-align: justify;
+  font-size: 0.8rem;
+  line-height: 1.2;
+  color: #002147;
+  letter-spacing: 1px;
+}
+
+.CV_BODY header {
+  font-size: 1.1rem;
+  text-align: center;
+  margin-bottom: 0.5rem;
+  letter-spacing: 1px;
+}
+
+.CV_BODY .mails {
+  font-family: monospace;
+  color: darkslateblue;
+  text-align: center;
+  margin-bottom: 1.5rem;
+}
+
+.CV_BODY .mails a {
+  color: slateblue;
+  text-decoration: underline;
+  text-decoration-color: slateblue;
+  margin-left: 0.3rem;
+}
+
+.CV_BODY h1,
+.CV_BODY h2,
+.CV_BODY h3,
+.CV_BODY h4 {
+  color: black;
+  margin-top: 0.5rem;
+}
+
+.CV_BODY h1 {
+  font-size: 1rem;
+  margin-top: 1rem;
+  margin-bottom: 0.4rem;
+  padding-bottom: 0;
+  border-bottom: 1px solid lightgray;
+  text-transform: uppercase;
+}
+
+.CV_BODY h2 {
+  font-size: 1rem;
+  margin-top: 0.8rem;
+  margin-bottom: 0.4rem;
+}
+
+.CV_BODY h3 {
+  font-weight: bold;
+  font-size: 0.9rem;
+  margin-top: 0.6rem;
+}
+
+.CV_BODY h4 {
+  font-size: 1rem;
+  margin-top: 0.4rem;
+}
+
+.CV_BODY ul {
+  list-style-type: disc;
+  padding-left: 1rem;
+  margin: 0rem 0;
+}
+
+.CV_BODY p{
+  margin: 0;
+  padding: 0;
+}
+
+.CV_BODY table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.CV_BODY table td,
+.CV_BODY table th {
+  padding: 0.2rem;
+  padding-left: 0;
+  text-align: left;
+  border: none ;
+}
+
+@media screen and (max-width: 600px) {
+  .CV_BODY {
+    width: 100%;
+    padding: 1rem;
+  }
+}
+
+@media print {
+  *{
+    margin: 0;
+    padding: 0;
+    background-color: white;
+  }    
+  
+  body {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    background-color: white;
+  }
+
+  .navbar{
+    display: none;
+  }
+
+  .CV_BODY {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    box-shadow: none;
+    border-radius: 0;
+  }
+
+  .CV_BODY header {
+    text-align: center;
+  }
+
+  .CV_BODY .mails {
+    text-align: center;
+  }
+
+  .CV_BODY h1 {
+  }
+
+  .CV_BODY h2 {
+    margin-top: 0.5rem;
+    margin-bottom: 0.3rem;
+  }
+
+  .CV_BODY table {
+    border-collapse: collapse;
+    border: none;
+    font-size: 0.9rem;
+  }
+
+  .CV_BODY table td,
+  .CV_BODY table th {
+    padding: 0;
+    margin: 0;
+  }
+
+  a {
+    color: black !important;
+    text-decoration: none !important;
+  }
+
+  @page {
+    margin: 1cm;
+  }
+}
