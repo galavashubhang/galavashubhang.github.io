@@ -1,7 +1,15 @@
 ---
-title: "Chirantandip"
+title: "Shubhang Galagali"
 ---
 
+Hello! 
 
-- Dec 2024 : Included my notes on the Kim Kim Suzuki Model and SYCL Code [notes](notes/pfm_kks.html)
-- Dec 2024 : Included my notes on Phase Field [notes](notes/pfm_intro.html)
+Chapter 2025:
+
+- secured my first paid internship
+- delved into research
+- discovered [MicroSim](microsim.co.in) - open-source stack of phase field codes & solvers
+- rejected by a few companies for internship
+- first paper as a co-author
+
+Onwards and Upwards 🚀
