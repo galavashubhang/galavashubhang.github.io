@@ -20,6 +20,7 @@
     align-items: center;
     gap: 1rem;
     justify-content: space-evenly;
+    flex-wrap: wrap;
 }
 
 .navbar a {

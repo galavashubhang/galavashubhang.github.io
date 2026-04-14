@@ -39,16 +39,34 @@ body {
   justify-content: center;
   
   background: white;
+  padding-bottom: 2rem;
 }
 
 footer {
-  padding: 2rem;
-  height: 2rem;
-  color: grey;
+  padding: 0.5rem 2rem;
+  color: grey !important;
   font-family: monospace;
   font-weight: bold;
   letter-spacing: 1px;
   text-align: center;
+  position: fixed !important;
+  bottom: 0 !important;
+  left: 0;
+  width: 100%;
+  background-color: white;
+  z-index: 1000;
+}
+
+footer a,
+footer a:link,
+footer a:visited,
+footer a:active {
+  color: grey !important;
+  text-decoration: none !important;
+}
+
+footer a:hover {
+  color: #002147 !important;
 }
 
 .main-content {
