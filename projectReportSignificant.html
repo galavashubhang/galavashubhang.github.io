@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <base href="https://galavashubhang.github.io/">
+    <link rel="stylesheet" href="assets/css/theme-style.css">
+    <link rel="stylesheet" href="assets/css/navbar-style.css">
+    <link rel="stylesheet" href="assets/css/index-style.css">
+    <style>
+        body a:not(.navbar a):not(footer a),
+        body a:not(.navbar a):not(footer a):link,
+        body a:not(.navbar a):not(footer a):visited,
+        body a:not(.navbar a):not(footer a):hover,
+        body a:not(.navbar a):not(footer a):active {
+            color: #ac4800 !important;
+            text-decoration-color: #ac4800 !important;
+        }
+
+        .update_body p {
+            margin: 0.3rem 0;
+        }
+
+        .event-entry {
+            margin-bottom: 1.5rem;
+        }
+
+        .event-title {
+            margin: 0;
+            font-size: 1rem;
+        }
+
+        .event-title span {
+            font-weight: normal;
+        }
+    </style>
+    <title>Shubhang Galagali | Significant Project Reports</title>
+</head>
+
+<body>
+
+    <div class="navbar">
+        <div class="navbar-menu">
+            <a href="index.html">Home</a>
+            <a href="cv.html">CV</a>
+            <a href="research.html">Research</a>
+            <a href="projects.html">Projects</a>
+            <a href="events.html">Events</a>
+            <a href="https://medium.com/@ShubhangGalagali" target="_blank">Blogs</a>
+            <a class="profile-icon-link" href="https://github.com/galavashubhang" target="_blank" aria-label="GitHub"
+                title="GitHub"><svg class="profile-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"
+                    width="18" height="18" aria-hidden="true">
+                    <path fill="currentColor"
+                        d="M12 2C6.48 2 2 6.58 2 12.24c0 4.52 2.87 8.35 6.84 9.71.5.09.68-.22.68-.49 0-.24-.01-.88-.01-1.73-2.78.62-3.37-1.37-3.37-1.37-.45-1.18-1.11-1.49-1.11-1.49-.91-.64.07-.63.07-.63 1 .07 1.53 1.06 1.53 1.06.89 1.56 2.34 1.11 2.91.85.09-.66.35-1.11.63-1.37-2.22-.26-4.56-1.14-4.56-5.06 0-1.12.39-2.03 1.03-2.75-.1-.26-.45-1.3.1-2.71 0 0 .84-.28 2.75 1.05A9.35 9.35 0 0 1 12 5.98c.85 0 1.71.12 2.51.34 1.91-1.33 2.75-1.05 2.75-1.05.55 1.41.2 2.45.1 2.71.64.72 1.03 1.63 1.03 2.75 0 3.93-2.34 4.8-4.57 5.05.36.32.68.94.68 1.9 0 1.37-.01 2.48-.01 2.82 0 .27.18.59.69.49A10.14 10.14 0 0 0 22 12.24C22 6.58 17.52 2 12 2z" />
+                </svg></a>
+            <a class="profile-icon-link" href="https://linkedin.com/in/galavashubhang" target="_blank"
+                aria-label="LinkedIn" title="LinkedIn"><svg class="profile-icon" xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 24 24" width="18" height="18" aria-hidden="true">
+                    <path fill="currentColor"
+                        d="M4.98 3.5A2.5 2.5 0 1 1 5 8.5a2.5 2.5 0 0 1-.02-5zM3 9.75h4v10.75H3V9.75zm6.25 0h3.83v1.47h.05c.53-.95 1.84-1.95 3.78-1.95 4.04 0 4.79 2.66 4.79 6.12v5.11h-4v-4.53c0-1.08-.02-2.47-1.5-2.47-1.51 0-1.74 1.18-1.74 2.39v4.61h-4V9.75z" />
+                </svg></a>
+        </div>
+    </div>
+
+    <div class="thisdiv">
+        <div class="indexmain">
+            <h1 style="margin-top: 0;">Significant Projects</h1>
+            <div class="update_body">
+                <ol>
+
+                    <li class="event-entry">
+                        <p class="event-title"><strong>Smart Grid</strong> | Cyber Physical Systems | <a
+                                href="https://drive.google.com/file/d/1UgmW8cr8MenVtwlkqGYIoY118wRBlucy/view"
+                                target="_blank">Documentation &rarr;</a> <span style="float:right;"><em>Jan. 2026
+                                    &ndash; Apr. 2026</em></span></p>
+                        <p><em>Supervisor: Prof. K. V. Gangadharan, Centre For System Design (CSD), NITK</em></p>
+                        <p>Built the Energy Generation &amp; Storage layer of a 9-member, 6-node decentralized smart
+                            grid prototype using ESP32-based circuits for Node 1 (Solar PV) and Node 2 (Battery BMS).
+                            Used ACS712, BH1750, AIT1000, and voltage divider sensors to monitor irradiance, panel
+                            temperature, and injected current in real time. Implemented autonomous solar control with
+                            thermal derating, relay cutoff above 65&deg;C, night mode below 2,000 lux, SoC bounds of
+                            10&ndash;90%, over-temperature protection at 45&deg;C, and automatic charge/discharge
+                            switching. Integrated MQTT-triggered closed-loop CPS coordination across generation, load
+                            management, and grid protection nodes.</p>
+                    </li>
+                    <hr>
+                    <li class="event-entry">
+                        <p class="event-title"><strong>Autonomous Underwater Vehicle</strong> | GUJCOST Robofest 5.0 |
+                            <a href="https://drive.google.com/file/d/1EEqTnNc-5s1eLAfu3xy7FuPFX-TuROwA/view?usp=sharing"
+                                target="_blank">Ideation Document &rarr;</a> <span style="float:right;"><em>Jul. 2025
+                                    &ndash; Dec. 2025</em></span>
+                        </p>
+                        <p>Co-designed the mechanical architecture and 3D CAD model of an AUV with modular thruster
+                            assemblies, buoyancy control pistons, and a gripper mechanism. Submitted the design for the
+                            Ideation Stage of <a href="https://robofest.gujarat.gov.in/Robofest/Index"
+                                target="_blank">GUJCOST Robofest 5.0</a>, a Government of Gujarat initiative. Performed
+                            structural optimization and component integration for hydrodynamic stability, load
+                            distribution, compactness, and manufacturability. Drafted subsystem schematics, bill of
+                            materials, and mechanical design documentation for proof-of-concept fabrication and future
+                            control system integration.</p>
+                    </li>
+                    <hr>
+                    <li class="event-entry">
+                        <p class="event-title"><strong>PET Tiles - The Waste to Wealth Saga!</strong> | Compression
+                            Moulding | <a
+                                href="https://drive.google.com/file/d/146EK9vNNOg0W3dr1VcB6vC9RyTS4jM70/view?usp=sharing"
+                                target="_blank">Project Report &rarr;</a> <span style="float:right;"><em>Apr. 2025
+                                    &ndash; May 2025</em></span></p>
+                        <p><em>Supervisor(s): Dr. S.B. Arya &amp; Dr. Selvakumar Murugesan, MME, NITK</em></p>
+                        <p>Designed a sustainable process to convert discarded PET bottles into low-cost customizable
+                            tiles as a proof-of-concept for decentralized circular waste management. Produced recycled
+                            PET tiles using thermoplastic compression moulding after shredding, melting at 300&deg;C,
+                            and pouring into preheated stainless steel moulds under compressive load. Added fillers to
+                            improve mechanical and aesthetic properties, followed by rapid water quenching to obtain
+                            durable functional tiles.</p>
+                    </li>
+                    <hr>
+                    <li class="event-entry">
+                        <p class="event-title"><strong>Multiscale Materials Analysis</strong> | <a
+                                href="https://ieee.nitk.ac.in/virtual_expo/report/68" target="_blank">Project Report
+                                &rarr;</a> <span style="float:right;"><em>Oct. 2024 &ndash; Apr. 2025</em></span></p>
+                        <p>Studied Electron Microscopy (TEM &amp; SEM), X-Ray Diffraction (XRD), energy bands in
+                            crystals, and solutions of the Schr&ouml;dinger Equation for free electrons, bound
+                            electrons, tunnelling, and solid states. Used ASE, VESTA, and abTEM to model structures and
+                            analyse electronic properties through computational methods. Conducted simulations on GaAs,
+                            Re6Se8Cl2, cubic BAs, SrTiO3, Ag, Au, Hg, and conductive polymers such as Polyaniline and
+                            PEDOT, computing properties including band structure and density of states.</p>
+                    </li>
+                    <hr>
+                    <li class="event-entry">
+                        <p class="event-title"><strong>SAE ADDC 2026 (Runners Up)</strong> | <a
+                                href="https://www.linkedin.com/posts/aero-nitk_aeronitk-saeindia-saeiss-ugcPost-7425487876085395457-m3hH"
+                                target="_blank">LinkedIn Post &rarr;</a> <span style="float:right;"><em>Aug. 2025
+                                    &ndash; Jan. 2026</em></span></p>
+                        <p>Researched landing gear design and its role in aircraft dynamics during flight and landing as
+                            part of the Structures Team at AeroNITK. Contributed to the fabrication of an autonomous
+                            drone for the SAEISS Autonomous Drone Development Challenge (ADDC) 2026. Secured second
+                            runners-up out of 80 teams for the Best Payload Dropping System category - <a
+                                href="https://drive.google.com/file/d/1jfzFMpd7KqPOp_zUgDGd6afp9LAMQ26A/view?usp=sharing"
+                                target="_blank">Certificate</a>.</p>
+                    </li>
+
+                </ol>
+            </div>
+        </div>
+    </div>
+
+    <footer style="position:fixed; bottom:0; left:0; width:100%; background-color:white; z-index:1000;">
+        Shubhang Galagali | B.Tech. NITK | <a href="mailto:shubhanggalagali@gmail.com"
+            style="color:grey;">shubhanggalagali@gmail.com</a>
+    </footer>
+</body>
+
+</html>

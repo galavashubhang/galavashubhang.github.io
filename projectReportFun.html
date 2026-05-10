@@ -8,25 +8,7 @@
     <link rel="stylesheet" href="assets/css/navbar-style.css">
     <link rel="stylesheet" href="assets/css/index-style.css">
     <style>
-        
-        html {
-            overflow-y: auto !important;
-        }
-        body {
-            min-height: auto !important;
-        }
-        .thisdiv {
-            min-height: auto !important;
-        }
-        .update_body {
-            padding-top: 0.2rem !important;
-        }
-        .update_body ul,
-        .update_body ol,
-        .update_body p {
-            margin-top: 0 !important;
-        }
-body a:not(.navbar a):not(footer a),
+        body a:not(.navbar a):not(footer a),
         body a:not(.navbar a):not(footer a):link,
         body a:not(.navbar a):not(footer a):visited,
         body a:not(.navbar a):not(footer a):hover,
@@ -34,51 +16,12 @@ body a:not(.navbar a):not(footer a),
             color: #ac4800 !important;
             text-decoration-color: #ac4800 !important;
         }
-        .cv-style-heading {
-            color: black !important;
-            font-family: myfonthere, serif;
-            font-size: 1.2rem;
-            font-weight: normal;
-            line-height: 125%;
-            margin-top: 1rem;
-            margin-bottom: 1.5rem;
-            padding-bottom: 0;
-            border-bottom: 1px solid lightgray;
-            text-transform: uppercase;
-        }
-        .project-options {
-            display: grid;
-            grid-template-columns: repeat(2, minmax(0, 1fr));
-            column-gap: 4rem;
-            row-gap: 2rem;
-            width: 100%;
-        }
-        .project-option {
-            padding: 0;
-            min-height: 8rem;
-            display: flex;
-            flex-direction: column;
-            justify-content: flex-start;
-        }
-        .project-option h5 {
-            color: #002147;
-            font-size: 1rem;
-            margin: 0 0 1rem 0;
-        }
-        .project-option p {
-            margin: 0 0 1rem 0;
-        }
-        .read-more-link {
-            align-self: flex-start;
-            font-weight: normal;
-        }
-        @media (max-width: 768px) {
-            .project-options {
-                grid-template-columns: 1fr;
-            }
-        }
+        .update_body p { margin: 0.3rem 0; }
+        .event-entry { margin-bottom: 1.5rem; }
+        .event-title { margin: 0; font-size: 1rem; }
+        .event-title span { font-weight: normal; }
     </style>
-    <title>Shubhang Galagali | Projects</title>
+    <title>Shubhang Galagali | Fun Project Reports</title>
 </head>
 <body>
 
@@ -97,24 +40,21 @@ body a:not(.navbar a):not(footer a),
 
 <div class="thisdiv">
   <div class="indexmain">
-    <h4 class="cv-style-heading">Projects</h4>
+    <h1 style="margin-top: 0;">Fun Projects</h1>
     <div class="update_body">
-      <div class="project-options">
-        <div class="project-option">
-          <div>
-            <h5>Significant Projects</h5>
-            <p><em>All my important projects.</em></p>
-          </div>
-          <a class="read-more-link" href="projectReportSignificant.html">Listed here &rarr;</a>
-        </div>
-        <div class="project-option">
-          <div>
-            <h5>Fun Projects</h5>
-            <p><em>Exploratory builds, technical experiments, and smaller projects.</em></p>
-          </div>
-          <a class="read-more-link" href="projectReportFun.html">Listed here &rarr;</a>
-        </div>
-      </div>
+        <ol>
+
+        <li class="event-entry">
+            <p class="event-title"><strong>Pathfinder MPC: Charting the Way!</strong> | MATLAB | <a href="https://ieee.nitk.ac.in/virtual_expo/report/110" target="_blank">Documentation &rarr;</a></p>
+            <p>Implemented Pure Pursuit Control (PPC), Bicycle Model (BM), and Model Predictive Control (MPC) algorithms for extraterrestrial rover systems. Compared the models across dynamic obstacle avoidance, response time, computational cost, and scalability.</p>
+        </li>
+
+        <li class="event-entry">
+            <p class="event-title"><strong>Automated Recognition of License Plates (ARLP)</strong> | Python, TensorFlow, OpenCV | <a href="https://github.com/galavashubhang/Advanced-Recognition-of-License-Plates-ARLP" target="_blank">Documentation &rarr;</a></p>
+            <p>Built a vehicle number plate recognition system for Indian vehicles using object detection, OCR, and a custom CNN-based feature extraction workflow. Used TesseractOCR and EasyOCR for license plate text extraction after plate boundary detection.</p>
+        </li>
+
+        </ol>
     </div>
   </div>
 </div>
